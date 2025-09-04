@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Maker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h2>Button Maker</h2>
+
+  <div class="form-container">
+    <div class="input-box">
+      <label>Button Text:</label>
+      <input type="text" id="btnText" placeholder="Enter text">
+    </div>
+
+    <div class="input-box">
+      <label>Width (px):</label>
+      <input type="number" id="btnWidth" placeholder="100">
+    </div>
+
+    <div class="input-box">
+      <label>Height (px):</label>
+      <input type="number" id="btnHeight" placeholder="40">
+    </div>
+
+    <div class="input-box">
+      <label>Background:</label>
+      <input type="color" id="btnBg" value="#4CAF50">
+    </div>
+
+    <div class="input-box">
+      <label>Text Color:</label>
+      <input type="color" id="btnColor" value="#ffffff">
+    </div>
+
+    <div class="input-box">
+      <label>Border Radius (px):</label>
+      <input type="number" id="btnRadius" placeholder="5">
+    </div>
+
+    <button id="createBtn" onclick="createButton()">Create Button</button>
+  </div>
+
+  <div id="preview">
+    <p>Button Will Appear Here</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
